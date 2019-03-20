@@ -60,7 +60,7 @@ public class SearchRegistered extends AppCompatActivity implements View.OnClickL
 
 
     public void goReg(){
-
+//
         user = userID.getText().toString();
         cutUser = user.substring(0, user.indexOf("@"));
         ePass = emailPassword.getText().toString();

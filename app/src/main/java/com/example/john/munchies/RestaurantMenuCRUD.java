@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
+//Harvey
 public class RestaurantMenuCRUD extends AppCompatActivity {
 
     FirebaseDatabase myFB;
@@ -61,6 +61,7 @@ public class RestaurantMenuCRUD extends AppCompatActivity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         restaurantUser = sharedPref.getString("User", "");
         restaurantName = sharedPref.getString("RestName", "");
+        Toast.makeText( RestaurantMenuCRUD.this,  restaurantName, Toast.LENGTH_LONG).show();
 
 
         restaurantMenuList = (ListView)findViewById(R.id.listMenuItemCRUD);
